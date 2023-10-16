@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Role</title>
+  <style>
+    body {
+      background-image: url("my.jpg");
+      background-size: cover;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .user-button {
+      background: linear-gradient(45deg, #0074d9, #00d2ff);
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-button:hover {
+      background: linear-gradient(45deg, #0056a1, #0095c9);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Choose Your Role</h2>
+    <form action="admin" method="get">
+      <button class="user-button" type="submit">Admin</button>
+    </form>
+    <form action="manage" method="get">
+      <button class="user-button" type="submit">Manager</button>
+    </form>
+    <form action="employee" method="get">
+      <button class="user-button" type="submit">Employee</button>
+    </form>
+  </div>
+</body>
+</html>

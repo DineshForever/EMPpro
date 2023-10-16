@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Person Details</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+        background-image:url("my.jpg");
+    background-size:cover;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Center text in table cells */
+        td {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>View Person Details</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>ID:</th>
+                <td th:text="${dto.id}"></td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td th:text="${dto.name}"></td>
+            </tr>
+            <tr>
+                <th>Role:</th>
+                <td th:text="${dto.role}"></td>
+            </tr>
+            <tr>
+                <th>Mobile No:</th>
+                <td th:text="${dto.mobileno}"></td>
+            </tr>
+            <tr>
+                <th>Place:</th>
+                <td th:text="${dto.place}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

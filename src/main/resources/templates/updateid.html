@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Data</title>
+    <style>
+        /* Add your CSS styles here */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Update Data</title>
+    
+</head>
+<body>
+  
+    
+
+    <form action="/update" method="post">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" required><br>
+        
+        <label for="mobileno">Mobile Number:</label>
+        <input type="text" id="mobileno" name="mobileno" required><br>
+        
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" required><br>
+        
+        <label for="user">User:</label>
+        <input type="text" id="user" name="user" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <input type="submit" value="Update">
+    </form>
+
+
+</body>
+</html>

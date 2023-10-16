@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      background-image: url("my.jpg");
+      background-size: cover;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .signup-button {
+      background: linear-gradient(45deg, #0074d9, #00d2ff);
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-button:hover {
+      background: linear-gradient(45deg, #0056a1, #0095c9);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="submit" method="get">
+      <button class="signup-button" id="signup-button">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>

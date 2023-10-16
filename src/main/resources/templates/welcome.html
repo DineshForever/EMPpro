@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <style>
+    body {
+      background-image: url("my.jpg");
+      background-size: cover;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 18%;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .redirect-button {
+      background: linear-gradient(45deg, #0074d9, #00d2ff);
+      border: none;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 50px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease-in-out; 
+    }
+
+    .redirect-button:hover {
+      background: linear-gradient(45deg, #0056a1, #0095c9);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to IBM-Tech Solutions</h1>
+    <form action="index" method="get">
+      <button class="redirect-button" type="submit">Go to Index</button>
+    </form>
+  </div>
+</body>
+</html>

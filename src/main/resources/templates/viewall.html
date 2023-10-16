@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User List</title>
+    <style>
+        body {
+        background-image:url("my.jpg");
+    background-size:cover;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center; /* Center text within table cells */
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>User List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Mobile No</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="dto : ${dtos}">
+                <td th:text="${dto.id}"></td>
+                <td th:text="${dto.name}"></td>
+                <td th:text="${dto.role}"></td>
+                <td th:text="${dto.mobileno}"></td>
+                <td th:text="${dto.place}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

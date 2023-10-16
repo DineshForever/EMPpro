@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Person Details</title>
+    <style>
+        body {
+            background-image: url("my.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #3498db, #59abe3);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #0074d9, #00d2ff);
+        }
+    </style>
+</head>
+ <script>
+    function confirmSubmit() {
+        if (confirm("Employee Data Successfully Deleted")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+<body>
+    <h1>Delete Person Details</h1>
+    <form method="post" action="delete" onsubmit="return confirmSubmit();">       
+        <label for="id">Enter ID:</label>
+        <input type="text" name="id">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
